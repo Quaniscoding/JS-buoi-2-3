@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="d-flex justify-content-center">
+        <div class="card w-50">
+            <div class="card header bg-dark text-white text-center">
+                MOVIE
+            </div>
+            <div class="card body bg-dark text-white">
+                <div class="form-group">
+                    <label>Tên phim</label>
+                    <input type="text" class="form-control" id="tenPhim">
+                </div>
+                <div class="form-group">
+                    <label>Giá vé người lớn</label>
+                    <input type="text" class="form-control"id="giaVeNl">
+                </div>
+                <div class="form-group">
+                    <label>Số lượng vé người lớn đã bán</label>
+                    <input type="text" class="form-control" id="slVeNl">
+                </div>
+                <div class="form-group">
+                    <label>Giá vé trẻ em</label>
+                    <input type="text" class="form-control" id="giaVeTe">
+                </div>
+                <div class="form-group">
+                    <label>Số lượng vé trẻ em đã bán</label>
+                    <input type="text" class="form-control" id="slVeTe">
+                </div>
+                <div class="form-group">
+                    <label>Phần trăm từ thiện</label>
+                    <select class="form-control" id="phanTramTunhien">
+                        <option>--Phần trăm từ thiện--</option>
+                        <option value="30">30%</option>
+                        <option value="20">20%</option>
+                        <option value="15">15%</option>
+                        <option value="10">10%</option>
+                        <option value="5">5%</option>
+                      </select>
+                </div>
+                <button class="btn btn-success" id="btnSubmit">Submit</button>
+                <div clas="card-footer tex-center" id="thongBaoMovie"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Bài 1 -->
+    <div class="d-flex justify-content-center">
+        <div class="card w-50">
+            <div class="card header bg-dark text-white text-center">Tính Tiền lương</div>
+            <div class="card body">
+                <div class="form-group" id="luongMotNgay">
+                    <p>Lương 1 ngày: 100.000</p>
+                </div>
+                <div class="form-group">
+                    <p>Nhập vô số ngày làm</p>
+                    <input class="form-control"type="number" id="soNgayLam">
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn btn-success" id="tinhTienLuong">Tính tiền lương</button>
+                    <div class="mt-2" id="thongBaoTienLuong"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- bài 2 -->
+    <div class="d-flex justify-content-center">
+        <div class="card w-50">
+            <div class="card header bg-dark text-white text-center">Tính giá trị trung bình của 5 số thực nhập từ bàn phím</div>
+            <div class="card body">
+                <p>Nhập số thứ 1</p>
+                <input type="number" id="num1">
+                <p>Nhập số thứ 2</p>
+                <input type="number" id="num2">
+                <p>Nhập số thứ 3</p>
+                <input type="number" id="num3">
+                <p>Nhập số thứ 4</p>
+                <input type="number" id="num4">
+                <p>Nhập số thứ 5</p>
+                <input type="number" id="num5">
+            <div class="card-footer text-center">
+                <button class="btn btn-success" id="tinhGiaTriTrungBinh">Tính giá trị trung bình</button>
+                <div class="mt-2" id="thongBaoSoTrungBinh"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- bài 3 -->
+    <div class="d-flex justify-content-center">
+        <div class="card w-50">
+            <div class="card header bg-dark text-white text-center">Trương trình quy đổi từ USD sang VND</div>
+            <div class="card body ">
+                <p>Nhập vào số tiền USD</p>
+                <input type="number" id="num" >
+            <div class="card-footer text-center">
+                <button class="btn btn-success" id="soTien">Quy đổi</button>
+                <div class="mt-2" id="thongBaoSoTien"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- bài 4 -->
+    <div class="d-flex justify-content-center">
+        <div class="card w-50">
+            <div class="card header bg-dark text-white text-center">Tính Diện tích chu vi hình chữ nhật</div>
+            <div class="card body ">
+                <p>Nhập vào chiều dài</p>
+                <input type="number" id="chieuDai">
+                <p>Nhập vào chiều rộng</p>
+                <input type="number" id="chieuRong">
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-success" id="tinhCvDt">Tính</button>
+                <div class="mt-2" id="thongBaoCvDt"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- bài 5 -->
+    <div class="d-flex justify-content-center">
+        <div class="card w-50">
+            <div class="card header bg-dark text-white text-center">Tính tổng 2 ký số</div>
+            <div class="card body ">
+                <p>Nhập vào số có 2 chữ số</p>
+                <input type="number" id="haiSo" >
+            <div class="card-footer text-center">
+                <button class="btn btn-success" id="tinhTong">Tính Tổng</button>
+                <div class="mt-2" id="thongBaoTong"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
